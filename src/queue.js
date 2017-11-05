@@ -16,13 +16,15 @@ this.length++;
 	}
 
 	shift() {
-
+	//console.log(this.heap);
+let temp=this.heap.length-1;
 		this.heap.pop();
 		if(this.length==0){
 			throw ERROR('can t remove');
 		}
 this.length--;
 
+return temp;
 	}
 
 	size() {

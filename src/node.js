@@ -16,23 +16,27 @@ class Node {
 
 
 	removeChild(node) {
-		if(node.parent){
-			
-		}
+
+
+			//if(node!==this.node.parent)
+			//throw ERROR('cantremove');
+
 //if(node==this.left)
 //	this.left=null;
 //if(node==this.right)
 	//this.right=null;
 
 
-//if((node!=this.left)&&(node!=this.right))
-//throw ERROR('cantremove');
+
 
 }
 
 	remove() {
+			//if(this.node.parent){
+		//this.left.parent.removeChild(this.left);
+		//this.right.parent.removeChild(this.right);
 //this.parent.removeChild(this);
-	}
+	}//}
 
 	swapWithParent() {
 
