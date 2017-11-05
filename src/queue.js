@@ -8,15 +8,21 @@ class PriorityQueue {
 	}
 
 	push(data, priority) {
+		if(this.length==this.maxsize){
+			throw ERROR('cant push')
+		}
+		this.heap.push(data,priority);
 this.length++;
 	}
 
 	shift() {
+		
 		this.heap.pop();
 		if(this.length==0){
 			throw ERROR('can t remove');
 		}
 this.length--;
+
 	}
 
 	size() {
@@ -24,11 +30,8 @@ return this.length;
 	}
 
 	isEmpty() {
-		if (this.length == 0){
-			return true;
-		} else{
-			return false;
-		}
+		return this.length == 0
+
 	}
 }
 

@@ -5,12 +5,13 @@ class Node {
  		this.parent=null;
 		this.left=null;
 		this.right = null;
+	//	this.child=null;
 	}
 
 	appendChild(node) {
-			
+
 			}
-	}
+
 
 	removeChild(node) {
 
