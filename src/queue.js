@@ -16,7 +16,7 @@ this.length++;
 	}
 
 	shift() {
-		
+
 		this.heap.pop();
 		if(this.length==0){
 			throw ERROR('can t remove');
@@ -30,7 +30,7 @@ return this.length;
 	}
 
 	isEmpty() {
-		return this.length == 0
+		return this.length == 0;
 
 	}
 }

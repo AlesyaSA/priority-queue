@@ -17,8 +17,14 @@ this.length--;
 	}
 
 	detachRoot() {
-		if(this.root==null){return null}
-return this.root.data;
+
+		//if(this.root==undefined){
+			//return null
+		//}
+//let r= this.root.data;
+
+//this.parentNodes.shift();
+return this.root;
 	}
 
 	restoreRootFromLastInsertedNode(detached) {
@@ -26,15 +32,15 @@ return this.root.data;
 	}
 
 	size() {
-
-	}
-
-	isEmpty() {
 return this.length;
 	}
 
-	clear() {
+	isEmpty() {
+return this.length==0;
+	}
 
+	clear() {
+this.length=0;
 	}
 
 	insertNode(node) {
